@@ -3,20 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
-  
+  <title>Countries</title>
+    
   <!-- STYLES -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="content">
-    <div class="box-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor incidunt adipisci, harum qui quas enim?</div>
-    <div class="box-2">Placeat ea, provident sit nemo architecto recusandae at quas veritatis deleniti suscipit harum ducimus corporis!</div>
-    <div class="box-3">Alias neque autem dicta dignissimos quibusdam pariatur iure quia dolor fugit maxime, et recusandae perspiciatis.</div>
-    <div class="box-4">Ducimus iste saepe voluptate sequi dolor. Sunt temporibus eum doloribus modi quae nam, repellat totam?</div>
-    <div class="box-5">Repellendus voluptatem fugit soluta nobis voluptates similique labore, incidunt accusamus pariatur quas ipsa suscipit quaerat.</div>
-  </div>
+  <!-- Header -->
+  <header class="site-header container">
+    <h2 class="site-header-titile">Where in the world?</h2> 
+    <button class="site-header-dark-mode-button">Dark-mode</button>
+  </header>
+  <main class="main-content">
+    <div class="container">
+      <div class="main-box">
+        <!-- Buttons -->
+        <form class="buttons-box" action="https://echo.htmlacademy.ru" method="post">
+          <button class="search-form">Search for a country...</button>
+              
+          <div>
+            <label for="region-type-select">Filtr by  Region</label>
+            <select name="region_type" id="region-type-select">
+              <option value="africa">Africa</option>
+              <option value="america">America</option>
+              <option value="asia">Asia</option>
+              <option value="europe">Europe</option>
+              <option value="oceania">Oceania</option>
+            </select>
+          </div>
+        </form>
+        <ul class="main-box-list">
+          <li class="main-box-item"><img  class="main-box-item-img" src="#" alt="flag">
+          <div class="main-box-item-info">
+            <h3 class="main-box-item-info-header"></h3>
+            <p class="main-box item-info-tetx"></p>
+          </div>
+          </li>
+          <li class="main-box-item"><img  class="main-box-item-img" src="#" alt="flag">
+          <div class="main-box-item-info">
+            <h3 class="main-box-item-info-header"></h3>
+            <p class="main-box item-info-tetx"></p>
+          </div>
+          </li>
+          <li class="main-box-item"><img  class="main-box-item-img" src="#" alt="flag">
+          <div class="main-box-item-info">
+            <h3 class="main-box-item-info-header"></h3>
+            <p class="main-box item-info-tetx"></p>
+          </div>
+          </li>
+          <li class="main-box-item"><img  class="main-box-item-img" src="#" alt="flag">
+          <div class="main-box-item-info">
+            <h3 class="main-box-item-info-header"></h3>
+            <p class="main-box item-info-tetx"></p>
+          </div>
+          </li>
+          <li class="main-box-item"><img  class="main-box-item-img" src="#" alt="flag">
+          <div class="main-box-item-info">
+            <h3 class="main-box-item-info-header"></h3>
+            <p class="main-box item-info-tetx"></p>
+          </div>
+          </li>
+          <li class="main-box-item"><img  class="main-box-item-img" src="#" alt="flag">
+          <div class="main-box-item-info">
+            <h3 class="main-box-item-info-header"></h3>
+            <p class="main-box item-info-tetx"></p>
+          </div>
+          </li>
+          <li class="main-box-item"><img  class="main-box-item-img" src="#" alt="flag">
+          <div class="main-box-item-info">
+            <h3 class="main-box-item-info-header"></h3>
+            <p class="main-box item-info-tetx"></p>
+          </div>
+          </li>
+          <li class="main-box-item"><img  class="main-box-item-img" src="#" alt="flag">
+          <div class="main-box-item-info">
+            <h3 class="main-box-item-info-header"></h3>
+            <p class="main-box item-info-tetx"></p>
+          </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
   
   <script src="js/main.js"></script>
 </body>
