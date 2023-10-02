@@ -1,10 +1,9 @@
 /* CUSTOM PROPS */
-.root {
+:root {
   --text-color: #111517;
   --body-bg: #fafafa;
-  --element-bg: #fff;
+  --element-bg: #fff ;
 }
-
 
 
 /* FONTS */
@@ -107,10 +106,6 @@ a {
   opacity: 0.6;
 }
 
-/* MAIN-CONTENT */
-.main-content{
-  flex-grow: 1;
-}
 
 /* HEADER */
 .site-header {
@@ -119,6 +114,7 @@ a {
   padding: 24px 0;
   background-color: var(--element-bg);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+  white-space: nowrap;
 }
 
 .site-header-container {
@@ -135,8 +131,17 @@ a {
 }
 
 .site-header-theme-toggler {
+  padding: 0;
   border: 0;
-  background-color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--text-color);
+}
+.site-header-theme-toggler:hover {
+  opacity: 0.8;
+}
+.site-header-theme-toggler:active {
+  opacity: 0.6;
 }
 
 .site-header-theme-toggler-inner {
@@ -145,12 +150,78 @@ a {
   justify-content: center;
 }
 
-.site-header-theme-toggler-icon {
+.site-header-theme-toggler {
   margin-right: 8px;
+  fill: #fff;
 }
-
+/* svg:hover path {
+  fill: yellow ;
+}
+ */
 .site-header-theme-toggler-text {
+  margin-left: 8px;
   font-size: 16px;
   font-weight: 600;
 }
 
+/* MAIN-CONTENT */
+.main-content{
+  flex-grow: 1;
+  margin-top: 48px;
+}
+
+.main-box {
+}
+
+.main-functions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-form-input {
+  padding-left: 25px;
+  width: 480px;
+  height: 56px;
+  border-radius: 5px;
+  background-color: var(--element-bg);
+  border: 0;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+
+}
+/* input {
+  background-image: url("../img/search-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 24px 0 32px;
+  margin: ;
+} */
+/* .serach-form-input::before {
+  content: url("../img/search-icon.svg");
+  background-image: url("../img/search-icon.svg");
+  background-repeat: no-repeat;
+} */
+
+.main-filter {
+  width: 200px;
+  height: 56px;
+
+  background-color: red;
+}
+
+.main-box-list {
+}
+
+.main-box-item {
+}
+
+.main-box-item-img {
+}
+
+.main-box-item-info {
+}
+
+.main-box-item-info-header {
+}
+
+.item-info-tetx {
+}
