@@ -10,7 +10,7 @@
 @font-face {
   font-family: "Nunito Sans 7pt";
   src:  url("../fonts/NunitoSans7pt-Regular.woff2") format("woff2"),
-    url("../fonts/NunitoSans7pt-Regular.woff") format("woff");
+  url("../fonts/NunitoSans7pt-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -19,7 +19,7 @@
 @font-face {
   font-family: "Nunito Sans 7pt";
   src:  url("../fonts/NunitoSans7pt-Light.woff2") format("woff2"),
-    url("../fonts/NunitoSans7pt-Light.woff") format("woff");
+  url("../fonts/NunitoSans7pt-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -28,7 +28,7 @@
 @font-face {
   font-family: "Nunito Sans 7pt";
   src:  url("../fonts/NunitoSans7pt-ExtraBold.woff2") format("woff2"),
-    url("../fonts/NunitoSans7pt-ExtraBold.woff") format("woff");
+  url("../fonts/NunitoSans7pt-ExtraBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -37,7 +37,7 @@
 @font-face {
   font-family: "Nunito Sans 7pt";
   src:  url("../fonts/NunitoSans7pt-SemiBold.woff2") format("woff2"),
-    url("../fonts/NunitoSans7pt-SemiBold.woff") format("woff");
+  url("../fonts/NunitoSans7pt-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -156,10 +156,10 @@ a {
   margin-right: 8px;
   fill: #fff;
 }
-/* svg:hover path {
+svg:hover path {
   fill: yellow ;
 }
- */
+
 .site-header-theme-toggler-text {
   margin-left: 8px;
   font-size: 16px;
@@ -172,10 +172,11 @@ a {
   padding: 48px 0;
 }
 
-.main-box {
+.filtres{
+  padding-bottom: 48px;
 }
 
-.main-functions {
+.filtres-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -201,32 +202,80 @@ a {
   box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
 }
 
-.main-box-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  list-style: none;
-  margin-top: 48px;
+
+/* INDEX-COUNTRY */
+.index-countries {
+  /* background-color: var(--element-bg); */
+  color: var(--text-color);
 }
 
-.main-box-item {
-  width: 264px;
+.index-countries-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 -75px -75px;
+}
+
+.index-countries-item {
+  width: calc(25% - 75px);
+  height: ;
+  margin-left: 75px;
+  margin-bottom: 75px;
+  /* width: 264px;
   height: 336px;
   flex-shrink: 0;
   border-radius: 5px;
   background-color: var(--element-bg);
-  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03); 
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);  */
 }
 
-.main-box-item-img {
+.index-country {
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: var(--element-bg);
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.03);
 }
 
-.main-box-item-info {
+.index-country-flag {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
 }
 
-.main-box-item-info-header {
+.index-country-info {
+  padding: 24px 24px 48px;
 }
 
-.item-info-text {
+.index-country-name {
+  flex-wrap: nowrap;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 800;
+}
+
+.index-country-link {
+  color: var(--text-color);
+}
+
+.index-country-details {
+  margin: 0;
+}
+
+.index-country-details-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.index-country-details-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.index-country-title {
+}
+
+.index-country-value {
+  margin-left: 4px;
 }
