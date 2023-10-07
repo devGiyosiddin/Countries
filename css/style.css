@@ -153,12 +153,13 @@ a {
 }
 
 .site-header-theme-toggler {
-  margin-right: 8px;
   fill: #fff;
 }
+
 svg:hover path {
   fill: yellow ;
 }
+
 
 .site-header-theme-toggler-text {
   margin-left: 8px;
@@ -214,20 +215,13 @@ svg:hover path {
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  margin: 0 0 -75px -75px;
+  margin: 0 0 -75px -74px;
 }
 
 .index-countries-item {
   width: calc(25% - 75px);
-  height: ;
-  margin-left: 75px;
+  margin-left: 74px;
   margin-bottom: 75px;
-  /* width: 264px;
-  height: 336px;
-  flex-shrink: 0;
-  border-radius: 5px;
-  background-color: var(--element-bg);
-  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);  */
 }
 
 .index-country {
@@ -248,12 +242,14 @@ svg:hover path {
 }
 
 .index-country-name {
+  width: 240px;
   flex-wrap: nowrap;
   margin-top: 0;
   margin-bottom: 16px;
   font-size: 18px;
   line-height: 26px;
-  font-weight: 800;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .index-country-link {
