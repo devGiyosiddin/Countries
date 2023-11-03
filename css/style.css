@@ -157,10 +157,6 @@ a {
   fill: #fff;
 }
 
-svg:hover path {
-  fill: yellow ;
-}
-
 
 .site-header-theme-toggler-text {
   margin-left: 8px;
@@ -182,10 +178,23 @@ svg:hover path {
   padding-bottom: 48px;
 }
 
-.filtres-box {
+.filtres-form {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.filters-search-wrapper {
+  position: relative;
+}
+
+.filters-search-icon {
+  position: absolute;
+  left: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-color);
+  pointer-events: none;
 }
 
 .search-form-input {
