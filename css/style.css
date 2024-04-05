@@ -348,12 +348,13 @@ a {
 .country-page-flag-info {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .country-page-flag {
   width: 560px;
   height: 401px;
-  /* margin-right: 120px; */
+  margin-right: 7vw;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.1); 
@@ -362,9 +363,7 @@ a {
 .country-page-info {
   width: 598px;
   height: auto;
-  margin: 0;
-  margin-top: 39px;
-  padding: 0;
+  padding: 39px 0;
   color: var(--text-color);
 }
 
@@ -380,11 +379,14 @@ a {
 .country-page-dls-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 70px;
+  margin-bottom: 2vw;
 }
 
 .country-page-details {
   margin: 0;
+}
+.country-page-details:not(:last-child) {
+  margin-right: 30px;
 }
 
 .country-page-details-item {
@@ -456,6 +458,37 @@ a {
 .index-countries-item {
   width: 100%; /* Set initial width to 100% */
 }
+
+@media (max-width: 1250px) {
+  .country-page-flag {
+    width: 100%;
+    max-width: 560px;
+    height: 35vw;
+  }
+  .country-page-info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .country-page-flag-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .country-page-flag {
+    margin-right: 0;
+    height: 45vw;
+  }
+  .country-page-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .country-page-border-countries {
+    margin-left: -83px;
+  }
+}
+
 @media (max-width: 768px) {
   .filtres-form {
     display: flex;
@@ -475,7 +508,52 @@ a {
   .site-header-title {
     font-size: 1.25rem;
   }
+  /* counntery-page */
+  .country-page {
+    padding-top: 80px;
+    padding-bottom: 62px;
+  }
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .country-page-flag-info {
+    flex-direction: column;
+  }
+  .country-page-flag {
+    width: 100%;
+    max-width: 60vw;
+    height: auto;
+    margin-right: 0;
+  }
+  .country-page-info {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .country-page-dls-wrapper {
+    flex-direction: column;
+  }
+  .country-page-details {
+    margin-bottom: 20px;
+  }
+  .country-page-border-countries {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .country-page-country-title {
+    text-align: center;
+  }
+  .country-page-border-countries {
+    margin-left: 0;
+  }
+  .country-page-border-countries-heading {
+    margin-bottom: 10px;
+  }
 }
+
 @media (max-width: 500px) {
   .site-header-title {
     font-weight: 800;
@@ -486,46 +564,8 @@ a {
     font-weight: 600;
     font-size: 18px;
   }
-}
-
-/* For screens up to 768px width */
-@media (max-width: 768px) {
-  .country-page {
-    padding-top: 80px;
-    padding-bottom: 62px;
-  }
-  .container {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  
-  .country-page-flag-info {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .country-page-flag {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-  }
-  
-  .country-page-info {
-    width: 100%;
-    margin-top: 20px;
-  }
-  
-  .country-page-dls-wrapper {
-    flex-direction: column;
-  }
-  
-  .country-page-details {
-    margin-bottom: 20px;
-  }
-  
-  .country-page-border-countries {
-    flex-direction: column;
-    align-items: flex-start;
+  .index-countries-item {
+    margin-bottom: 65px;
   }
 }
 
@@ -550,5 +590,12 @@ a {
   .country-page-details-item-title,
   .country-page-details-item-value {
     font-size: 14px;
+  }
+  .country-page-border-countries {
+    margin-left: 8vw;
+  }
+  .country-page-border-country-list {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
