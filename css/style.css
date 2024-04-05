@@ -64,7 +64,6 @@ body {
   flex-direction: column;
   font-family: "Nunito Sans","Arial", sans-serif;
   font-size: 14px;
-  line-height: 16;
   color: var(--text-color);
   padding: 0;
   margin: 0;
@@ -486,5 +485,70 @@ a {
   .site-header-theme-toggler-text {
     font-weight: 600;
     font-size: 18px;
+  }
+}
+
+/* For screens up to 768px width */
+@media (max-width: 768px) {
+  .country-page {
+    padding-top: 80px;
+    padding-bottom: 62px;
+  }
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .country-page-flag-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .country-page-flag {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  .country-page-info {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .country-page-dls-wrapper {
+    flex-direction: column;
+  }
+  
+  .country-page-details {
+    margin-bottom: 20px;
+  }
+  
+  .country-page-border-countries {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* For screens up to 480px width */
+@media (max-width: 480px) {
+  .country-page {
+    padding-top: 40px;
+  }
+  .country-page-back-link {
+    padding: 8px 20px;
+  }
+  
+  .country-page-back-icon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .country-page-flag {
+    max-width: 250px;
+  }
+  
+  .country-page-details-item-title,
+  .country-page-details-item-value {
+    font-size: 14px;
   }
 }
