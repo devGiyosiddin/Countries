@@ -557,7 +557,7 @@ a {
 @media (max-width: 500px) {
   .site-header-title {
     font-weight: 800;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 143%;
   }
   .site-header-theme-toggler-text {
@@ -601,5 +601,16 @@ a {
   .country-page-back-wrapper {
     margin-top: 40px;
     margin-bottom: 64px;
+  }
+  .site-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .site-header-title {
+    margin-bottom: 10px;
+  }
+  .site-header {
+    height: auto; */
   }
 }
