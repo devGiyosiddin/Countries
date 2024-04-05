@@ -444,3 +444,48 @@ a {
 .country-page-border-country-link:not(:last-child) {
   margin-right: 10px;
 }
+
+.index-countries-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* MEDIA */
+.index-countries-item {
+  width: 100%; /* Set initial width to 100% */
+}
+@media (max-width: 768px) {
+  .filtres-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .filters-search-wrapper {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .search-form-input {
+    min-width: 30vw;
+  }
+  .index-countries-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .site-header-title {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 500px) {
+  .site-header-title {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 143%;
+  }
+  .site-header-theme-toggler-text {
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
